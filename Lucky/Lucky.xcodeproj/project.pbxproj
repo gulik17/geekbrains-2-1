@@ -21,6 +21,8 @@
 		C397CA59244AECB300B76D0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C397CA57244AECB300B76D0E /* Main.storyboard */; };
 		C397CA5B244AECBB00B76D0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C397CA5A244AECBB00B76D0E /* Assets.xcassets */; };
 		C397CA5E244AECBB00B76D0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C397CA5C244AECBB00B76D0E /* LaunchScreen.storyboard */; };
+		C3B4D9D324536EED00356D18 /* StatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B4D9D224536EED00356D18 /* StatTableViewController.swift */; };
+		C3B4D9D524536FA100356D18 /* StatCaretaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B4D9D424536FA100356D18 /* StatCaretaker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		C397CA5A244AECBB00B76D0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C397CA5D244AECBB00B76D0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C397CA5F244AECBB00B76D0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3B4D9D224536EED00356D18 /* StatTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatTableViewController.swift; sourceTree = "<group>"; };
+		C3B4D9D424536FA100356D18 /* StatCaretaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatCaretaker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,8 @@
 				C3433EDC244F39AB00665CD4 /* Game.swift */,
 				C319B2382450D16200295793 /* CorrectViewController.swift */,
 				C319B23A2450D17E00295793 /* EndGameViewController.swift */,
+				C3B4D9D224536EED00356D18 /* StatTableViewController.swift */,
+				C3B4D9D424536FA100356D18 /* StatCaretaker.swift */,
 			);
 			path = Lucky;
 			sourceTree = "<group>";
@@ -178,6 +184,8 @@
 				C33D51BC244DE87E006E2918 /* RoundView.swift in Sources */,
 				C319B23B2450D17E00295793 /* EndGameViewController.swift in Sources */,
 				C397CA52244AECB300B76D0E /* AppDelegate.swift in Sources */,
+				C3B4D9D324536EED00356D18 /* StatTableViewController.swift in Sources */,
+				C3B4D9D524536FA100356D18 /* StatCaretaker.swift in Sources */,
 				C3433EDB244EBBF200665CD4 /* GameViewController.swift in Sources */,
 				C397CA54244AECB300B76D0E /* SceneDelegate.swift in Sources */,
 				C319B2392450D16200295793 /* CorrectViewController.swift in Sources */,

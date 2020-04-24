@@ -36,7 +36,24 @@ class Game {
     static let shared = Game()
     var gameSession: GameSession?
     
-    private init() {}
+    private(set) var stats: [Stat] {
+        didSet {
+            statsCaretaker.save(stats: self.stats)
+        }
+    }
+    
+    private let statsCaretaker = StatCaretaker()
+    
+    private init() {
+        self.stats = self.statsCaretaker.retrieveStats()
+    }
+    
+    func addResult() {
+        guard let answersCount = gameSession?.current else {return}
+        let result = Stat(date: Date(), resultValue: String(answersCount)+"/15")
+        self.stats.append(result)
+        self.gameSession = nil
+    }
 }
 
 class GameSession {
@@ -165,4 +182,9 @@ class GameSession {
         qObj.append(q14)
         qObj.append(q15)
     }
+}
+
+struct Stat: Codable {
+    var date = Date()
+    var resultValue = String()
 }

@@ -30,5 +30,6 @@ class EndGameViewController: UIViewController {
         default:
             resultLabel.text = "0"
         }
+        Game.shared.addResult()
     }
 }
