@@ -8,30 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		C301B8D9244DCB040099C639 /* lucky_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C301B8D7244DCB040099C639 /* lucky_bg.jpg */; };
-		C301B8DE244DCC2B0099C639 /* lucky_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = C301B8DD244DCC2B0099C639 /* lucky_logo.png */; };
 		C319B2372450CDF600295793 /* medal.png in Resources */ = {isa = PBXBuildFile; fileRef = C319B2362450CDF600295793 /* medal.png */; };
 		C319B2392450D16200295793 /* CorrectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319B2382450D16200295793 /* CorrectViewController.swift */; };
 		C319B23B2450D17E00295793 /* EndGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319B23A2450D17E00295793 /* EndGameViewController.swift */; };
 		C33D51BC244DE87E006E2918 /* RoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33D51BB244DE87E006E2918 /* RoundView.swift */; };
 		C3433EDB244EBBF200665CD4 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3433EDA244EBBF200665CD4 /* GameViewController.swift */; };
 		C3433EDD244F39AB00665CD4 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3433EDC244F39AB00665CD4 /* Game.swift */; };
+		C3753313245281450089AA54 /* lucky_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = C3753312245281450089AA54 /* lucky_logo.png */; };
 		C397CA52244AECB300B76D0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C397CA51244AECB300B76D0E /* AppDelegate.swift */; };
 		C397CA54244AECB300B76D0E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C397CA53244AECB300B76D0E /* SceneDelegate.swift */; };
 		C397CA56244AECB300B76D0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C397CA55244AECB300B76D0E /* ViewController.swift */; };
 		C397CA59244AECB300B76D0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C397CA57244AECB300B76D0E /* Main.storyboard */; };
 		C397CA5B244AECBB00B76D0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C397CA5A244AECBB00B76D0E /* Assets.xcassets */; };
 		C397CA5E244AECBB00B76D0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C397CA5C244AECBB00B76D0E /* LaunchScreen.storyboard */; };
+		C3B4D9D324536EED00356D18 /* StatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B4D9D224536EED00356D18 /* StatTableViewController.swift */; };
+		C3B4D9D524536FA100356D18 /* StatCaretaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B4D9D424536FA100356D18 /* StatCaretaker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C301B8D7244DCB040099C639 /* lucky_bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lucky_bg.jpg; sourceTree = "<group>"; };
-		C301B8DD244DCC2B0099C639 /* lucky_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lucky_logo.png; path = ../../../../Downloads/Desktop/lucky_logo.png; sourceTree = "<group>"; };
 		C319B2362450CDF600295793 /* medal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = medal.png; sourceTree = "<group>"; };
 		C319B2382450D16200295793 /* CorrectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorrectViewController.swift; sourceTree = "<group>"; };
 		C319B23A2450D17E00295793 /* EndGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndGameViewController.swift; sourceTree = "<group>"; };
 		C33D51BB244DE87E006E2918 /* RoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundView.swift; sourceTree = "<group>"; };
 		C3433EDA244EBBF200665CD4 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		C3433EDC244F39AB00665CD4 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		C3753312245281450089AA54 /* lucky_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lucky_logo.png; sourceTree = "<group>"; };
 		C397CA4E244AECB300B76D0E /* Lucky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lucky.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C397CA51244AECB300B76D0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C397CA53244AECB300B76D0E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +42,8 @@
 		C397CA5A244AECBB00B76D0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C397CA5D244AECBB00B76D0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C397CA5F244AECBB00B76D0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3B4D9D224536EED00356D18 /* StatTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatTableViewController.swift; sourceTree = "<group>"; };
+		C3B4D9D424536FA100356D18 /* StatCaretaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatCaretaker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +60,8 @@
 		C301B8DA244DCB1C0099C639 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				C3753312245281450089AA54 /* lucky_logo.png */,
 				C319B2362450CDF600295793 /* medal.png */,
-				C301B8DD244DCC2B0099C639 /* lucky_logo.png */,
 				C301B8D7244DCB040099C639 /* lucky_bg.jpg */,
 			);
 			path = images;
@@ -95,6 +99,8 @@
 				C3433EDC244F39AB00665CD4 /* Game.swift */,
 				C319B2382450D16200295793 /* CorrectViewController.swift */,
 				C319B23A2450D17E00295793 /* EndGameViewController.swift */,
+				C3B4D9D224536EED00356D18 /* StatTableViewController.swift */,
+				C3B4D9D424536FA100356D18 /* StatCaretaker.swift */,
 			);
 			path = Lucky;
 			sourceTree = "<group>";
@@ -162,7 +168,7 @@
 				C397CA5B244AECBB00B76D0E /* Assets.xcassets in Resources */,
 				C397CA59244AECB300B76D0E /* Main.storyboard in Resources */,
 				C301B8D9244DCB040099C639 /* lucky_bg.jpg in Resources */,
-				C301B8DE244DCC2B0099C639 /* lucky_logo.png in Resources */,
+				C3753313245281450089AA54 /* lucky_logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,6 +184,8 @@
 				C33D51BC244DE87E006E2918 /* RoundView.swift in Sources */,
 				C319B23B2450D17E00295793 /* EndGameViewController.swift in Sources */,
 				C397CA52244AECB300B76D0E /* AppDelegate.swift in Sources */,
+				C3B4D9D324536EED00356D18 /* StatTableViewController.swift in Sources */,
+				C3B4D9D524536FA100356D18 /* StatCaretaker.swift in Sources */,
 				C3433EDB244EBBF200665CD4 /* GameViewController.swift in Sources */,
 				C397CA54244AECB300B76D0E /* SceneDelegate.swift in Sources */,
 				C319B2392450D16200295793 /* CorrectViewController.swift in Sources */,

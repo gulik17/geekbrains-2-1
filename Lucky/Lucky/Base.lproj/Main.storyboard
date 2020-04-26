@@ -24,6 +24,35 @@
                                     <constraint firstAttribute="width" secondItem="y32-Bq-YR4" secondAttribute="height" multiplier="1:1" id="gQO-SA-abc"/>
                                 </constraints>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="duo-Tu-HHn">
+                                <rect key="frame" x="62.5" y="507" width="250" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xsb-dc-v2q" customClass="RoundButton" customModule="Lucky" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" image="wrench.fill" catalog="system"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DmM-AW-cMT" customClass="RoundButton" customModule="Lucky" customModuleProvider="target">
+                                        <rect key="frame" x="100" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="star.fill" catalog="system"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DTd-ya-fsf" customClass="RoundButton" customModule="Lucky" customModuleProvider="target">
+                                        <rect key="frame" x="200" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" image="chart.pie.fill" catalog="system"/>
+                                        <connections>
+                                            <segue destination="17f-9j-Qrc" kind="showDetail" id="FJ2-dU-dKo"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2ay-id-cHf"/>
+                                    <constraint firstAttribute="width" constant="250" id="C6Z-pS-8vQ"/>
+                                </constraints>
+                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="apT-hZ-3Jc" customClass="RoundButton" customModule="Lucky" customModuleProvider="target">
                                 <rect key="frame" x="62.5" y="587" width="250" height="50"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -41,8 +70,10 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="apT-hZ-3Jc" firstAttribute="top" secondItem="duo-Tu-HHn" secondAttribute="bottom" constant="30" id="0kW-5V-9Mb"/>
                             <constraint firstItem="LjG-93-GwQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1WF-AG-H5d"/>
                             <constraint firstItem="y32-Bq-YR4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="5qW-Pg-jNt"/>
+                            <constraint firstItem="duo-Tu-HHn" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="BMs-KG-Wry"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="y32-Bq-YR4" secondAttribute="trailing" constant="60" id="QKC-kf-cr7"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LjG-93-GwQ" secondAttribute="bottom" id="QbP-Fw-ebP"/>
                             <constraint firstItem="apT-hZ-3Jc" firstAttribute="centerX" secondItem="LjG-93-GwQ" secondAttribute="centerX" id="bgj-3t-6z7"/>
@@ -59,6 +90,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="138.40000000000001" y="97.601199400299862"/>
+        </scene>
+        <!--Stat Table View Controller-->
+        <scene sceneID="9hh-qT-gRw">
+            <objects>
+                <tableViewController id="17f-9j-Qrc" customClass="StatTableViewController" customModule="Lucky" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="wae-rr-aCL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="bodyIdentifier" id="Zab-Xx-VMo">
+                                <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Zab-Xx-VMo" id="h5b-Fq-FnB">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="17f-9j-Qrc" id="HMq-tA-LKX"/>
+                            <outlet property="delegate" destination="17f-9j-Qrc" id="NZo-X5-EYO"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="zd5-sd-6b0"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lzs-Dm-p5J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="926" y="98"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dNZ-cY-Q6L">
@@ -325,7 +385,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="un6-Om-vMr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="973.60000000000002" y="97.601199400299862"/>
+            <point key="canvasLocation" x="926" y="-579"/>
         </scene>
         <!--Correct View Controller-->
         <scene sceneID="chV-QR-AOM">
@@ -558,7 +618,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hh4-MT-HpO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1818" y="-240"/>
+            <point key="canvasLocation" x="1575" y="-580"/>
         </scene>
         <!--End Game View Controller-->
         <scene sceneID="xBX-1O-p47">
@@ -629,10 +689,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6my-cu-iKg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1816.8" y="429.53523238380814"/>
+            <point key="canvasLocation" x="2220" y="-580"/>
         </scene>
     </scenes>
     <resources>
+        <image name="chart.pie.fill" catalog="system" width="64" height="62"/>
         <image name="lucky_bg.jpg" width="810" height="1440"/>
         <image name="lucky_logo.png" width="251" height="251"/>
         <image name="medal.png" width="120" height="120"/>
@@ -640,5 +701,7 @@
         <image name="percent" catalog="system" width="64" height="58"/>
         <image name="person.3.fill" catalog="system" width="71" height="34"/>
         <image name="phone.fill" catalog="system" width="64" height="56"/>
+        <image name="star.fill" catalog="system" width="64" height="58"/>
+        <image name="wrench.fill" catalog="system" width="64" height="60"/>
     </resources>
 </document>
